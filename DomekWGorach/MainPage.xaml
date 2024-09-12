@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DomekWGorach.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="obraz.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="obrazek " />
+            
+<FlexLayout>
+
+                <Button
+                    
+                x:Name="polub"
+                Text="Polób" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="polub"
+                HorizontalOptions="Fill" />
+
+                <Button
+                x:Name="usun"
+                Text="Usuń" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="usun"
+                HorizontalOptions="Fill" />
+
+                <Button
+                x:Name="zapisz"
+                Text="Zapisz" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="zapisz"
+                HorizontalOptions="Fill" />
+
+            </FlexLayout>
+            
+<Label Text="zero polubień" />
+            <Line>
+                SemanticProperties.Hint="horizontal line "
+            </Line>
+            
+<Label Text="opis" />
+
+            <Label Text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
